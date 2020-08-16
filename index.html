@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>pimeja</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body id ="top">
+    <div class="main">
+      <input type="radio" id="all-letters" name="letters" value="all-letters" checked>
+      <input type="radio" id="a" name="letters" value="a">
+      <input type="radio" id="e" name="letters" value="e">
+      <input type="radio" id="i" name="letters" value="i">
+      <input type="radio" id="j" name="letters" value="j">
+      <input type="radio" id="k" name="letters" value="k">
+      <input type="radio" id="l" name="letters" value="l">
+      <input type="radio" id="m" name="letters" value="m">
+      <input type="radio" id="n" name="letters" value="n">
+      <input type="radio" id="o" name="letters" value="o">
+      <input type="radio" id="p" name="letters" value="p">
+      <input type="radio" id="s" name="letters" value="s">
+      <input type="radio" id="t" name="letters" value="t">
+      <input type="radio" id="u" name="letters" value="u">
+      <input type="radio" id="w" name="letters" value="w">
+      <input type="radio" id="all-types" name="type" value="all-types" checked>
+      <input type="radio" id="adjective" name="type" value="adjective">
+      <input type="radio" id="noun" name="type" value="noun">
+      <input type="radio" id="number" name="type" value="number">
+      <input type="radio" id="particle" name="type" value="particle">
+      <input type="radio" id="pre-verb" name="type" value="pre-verb">
+      <input type="radio" id="preposition" name="type" value="preposition">
+      <input type="radio" id="verb" name="type" value="verb">
+      <input type="checkbox" id="ilo">
+      <input type="checkbox" id="lukin">
+      <input type="checkbox" id="nimi">
+      <input type="checkbox" id="sona">
+      <input type="checkbox" id="sitelen">
+      <input type="checkbox" id="kule">
+      <input type="checkbox" id="toki">
+      <nav>
+      <ul class="filters menu">
+        <li><label for="ilo" class="pona-pona">ilo</label></li>
+      </ul>
+      <ul class="filters collapsible letters">
+        <li><label for="all-letters">*</label></li>
+        <li><label for="a">a</label></li>
+        <li><label for="e">e</label></li>
+        <li><label for="i">i</label></li>
+        <li><label for="j">j</label></li>
+        <li><label for="k">k</label></li>
+        <li><label for="l">l</label></li>
+        <li><label for="m">m</label></li>
+        <li><label for="n">n</label></li>
+        <li><label for="o">o</label></li>
+        <li><label for="p">p</label></li>
+        <li><label for="s">s</label></li>
+        <li><label for="t">t</label></li>
+        <li><label for="u">u</label></li>
+        <li><label for="w">w</label></li>
+      </ul>
+      <ul class="filters collapsible types">
+        <li><label for="all-types">*</label></li>
+        <li><span class="en"><label for="adjective">adjective</label></span>
+            <span class="fr"><label for="adjectif">adjectif</label></span></li>
+        <li><label for="noun"><span class="en">noun</span><span class="fr">nom</span></label></li>
+        <li><label for="number"><span class="en">number</span><span class="fr">nombre</span></label></li>
+        <li><label for="particle"><span class="en">particle</span><span class="fr">particule</span></label></li>
+        <li><label for="pre-verb"><span class="en">pre-verb</span><span class="fr">auxiliaire</span></label></li>
+        <li><label for="preposition"><span class="en">preposition</span><span class="fr">préposition</span></label></li>
+        <li><label for="verb"><span class="en">verb</span><span class="fr">verbe</span></label></li>
+      </ul>
+      <ul class="filters collapsible options">
+        <li><label for="lukin" class="pona-pona">lukin</label></li>
+        <li><label for="nimi" class="pona-pona">nimi</label></li>
+        <li><label for="sona" class="pona-pona">sona</label></li>
+        <li><label for="sitelen" class="pona-pona">sitelen</label></li>
+        <li><label for="kule" class="pona-pona">kule</label></li>
+        <li><label for="toki" class="pona-pona">toki</label></li>
+      </ul>
+      </nav>
+      <ul class="cards">
+        <!-- a -->
+        <li class="card" data-category="a k particle">
+          <div class="g">a</div><div class="n">a / kin</div>
+          <div class="l en"><em>particle</em>(emphasis, emotion or confirmation)</div>
+          <div class="l fr"><em>particule</em>(accent, émotion ou confirmation)</div>
+        </li>
+        <li class="card" data-category="a noun">
+          <div class="g">akesi</div><div class="n">akesi</div>
+          <div class="l en"><em>noun</em>non-cute animal; reptile, amphibian</div>
+          <div class="l fr"><em>nom</em>animal non-mignon ; reptile, amphibien</div>
+        </li>
+        <li class="card" data-category="a adjective number">
+          <div class="g">ala</div><div class="n">ala</div>
+          <div class="l en"><em>adjective</em>no, not, zero</div>
+          <div class="l fr"><em>adjectif</em>non, ne, pas, aucun, zero</div>
+          <div class="l en"><em>number</em>0</div>
+          <div class="l fr"><em>nombre</em>0</div>
+        </li>
+        <li class="card" data-category="a verb">
+          <div class="g">alasa</div><div class="n">alasa</div>
+          <div class="l en"><em>verb</em>to hunt, forage</div>
+          <div class="l fr"><em>verbe</em>chasser, cueillir</div>
+        </li>
+        <li class="card" data-category="a adjective, noun, number">
+          <div class="g">ale</div><div class="n">ale / ali</div>
+          <div class="l en"><em>adjective</em>all; abundant, countless, bountiful, every, plentiful</div>
+          <div class="l fr"><em>adjectif</em>tous, abondants, innombrables</div>
+          <div class="l en"><em>noun</em>abundance, everything, life, universe</div>
+          <div class="l fr"><em>nom</em>tout, abondance, la vie, l'univers</div>
+          <div class="l en"><em>number</em>infinity (simple); 100 (complex)</div>
+          <div class="l fr"><em>nombre</em>infinité (simple) ; 100 (complexe)</div>
+        </li>
+        <li class="card" data-category="a adjective">
+          <div class="g">anpa</div><div class="n">anpa</div>
+          <div class="l en"><em>adjective</em>bowing down, downward, humble, lowly, dependent</div>
+          <div class="l fr"><em>adjectif</em>incliné vers le bas, humble, qui dépend</div>
+        </li>
+        <li class="card" data-category="a adjective">
+          <div class="g">ante</div><div class="n">ante</div>
+          <div class="l en"><em>adjective</em>different, altered, changed, other</div>
+          <div class="l fr"><em>adjectif</em>différent, changé, autre</div>
+        </li>
+        <li class="card" data-category="a particle">
+          <div class="g">anu</div><div class="n">anu</div>
+          <div class="l en"><em>particle</em>or</div>
+          <div class="l fr"><em>particule</em>ou</div>
+        </li>
+        <li class="card" data-category="a adjective pre-verb">
+          <div class="g">awen</div><div class="n">awen</div>
+          <div class="l en"><em>adjective</em>enduring, kept, protected, safe, waiting, staying</div>
+          <div class="l fr"><em>adjectif</em>resté, protégé, gardé, qui attend, qui persiste, conservé</div>
+          <div class="l en"><em>pre-verb</em>to continue to</div>
+          <div class="l fr"><em>auxiliaire</em>continuer à</div>
+        </li>
+        <!-- e -->
+        <li class="card" data-category="e particle">
+          <div class="g">e</div><div class="n">e</div>
+          <div class="l en"><em>particle</em>(before the direct object)</div>
+          <div class="l fr"><em>particule</em>(avant l'objet direct)</div>
+        </li>
+        <li class="card" data-category="e particle">
+          <div class="g">en</div><div class="n">en</div>
+          <div class="l en"><em>particle</em>(between multiple subjects)</div>
+          <div class="l fr"><em>particule</em>(entre plusieurs sujets)</div>
+        </li>
+        <li class="card" data-category="e noun">
+          <div class="g">esun</div><div class="n">esun</div>
+          <div class="l en"><em>noun</em>market, shop, fair, bazaar, business transaction</div>
+          <div class="l fr"><em>nom</em>marché, boutique, foire, magasin, commerce</div>
+        </li>
+        <!-- i -->
+        <li class="card" data-category="i noun pu2">
+          <div class="g">ijo</div><div class="n">ijo</div>
+          <div class="l en"><em>noun</em>thing, something, being, phenomenon, object, matter</div>
+          <div class="l fr"><em>nom</em>chose, phénomène, objet, matière</div>
+        </li>
+        <li class="card" data-category="i adjective">
+          <div class="g">ike</div><div class="n">ike</div>
+          <div class="l en"><em>adjective</em>bad, negative; non-essential, irrelevant</div>
+          <div class="l fr"><em>adjectif</em>mauvais, négatif ; superflu, non pertinent</div>
+        </li>
+        <li class="card" data-category="i noun">
+          <div class="g">ilo</div><div class="n">ilo</div>
+          <div class="l en"><em>noun</em>tool, implement, machine, device</div>
+          <div class="l fr"><em>nom</em>outil, instrument, équipement, machine, appareil</div>
+        </li>
+        <li class="card" data-category="i noun">
+          <div class="g">insa</div><div class="n">insa</div>
+          <div class="l en"><em>noun</em>centre, content, inside, between; internal organ, stomach</div>
+          <div class="l fr"><em>nom</em>centre, contenu, intérieur, entre ; estomac, viscères</div>
+        </li>
+        <!-- j -->
+        <li class="card" data-category="j adjective">
+          <div class="g">jaki</div><div class="n">jaki</div>
+          <div class="l en"><em>adjective</em>disgusting, obscene, sickly, toxic, unclean, unsanitary</div>
+          <div class="l fr"><em>adjectif</em>dégoûtant, obscène, maladif, toxique, impur, insalubre</div>
+        </li>
+        <li class="card" data-category="j noun pu2">
+          <div class="g">jan</div><div class="n">jan</div>
+          <div class="l en"><em>noun</em>human being, person, somebody</div>
+          <div class="l fr"><em>nom</em>être humain, personne, quelqu'un</div>
+        </li>
+        <li class="card" data-category="j adjective">
+          <div class="g">jelo</div><div class="n">jelo</div>
+          <div class="l en"><em>adjective</em>yellow, yellowish</div>
+          <div class="l fr"><em>adjectif</em>jaune</div>
+        </li>
+        <li class="card" data-category="j verb pu5">
+          <div class="g">jo</div><div class="n">jo</div>
+          <div class="l en"><em>verb</em>to have, carry, countain, hold</div>
+          <div class="l fr"><em>verbe</em>avoir, porter, contenir, tenir</div>
+        </li>
+        <!-- k -->
+        <li class="card" data-category="k noun">
+          <div class="g">kala</div><div class="n">kala</div>
+          <div class="l en"><em>noun</em>fish, marine animal, sea creature</div>
+          <div class="l fr"><em>nom</em>poisson, animal sous-marin</div>
+        </li>
+        <li class="card" data-category="k verb">
+          <div class="g">kalama</div><div class="n">kalama</div>
+          <div class="l en"><em>verb</em>to produce a sound; recite, utter aloud</div>
+          <div class="l fr"><em>verbe</em>émettre un son ; réciter, proférer</div>
+        </li>
+        <li class="card" data-category="k adjective pre-verb">
+          <div class="g">kama</div><div class="n">kama</div>
+          <div class="l en"><em>adjective</em>arriving, coming, future, summoned</div>
+          <div class="l fr"><em>adjectif</em>qui arrive, qui vient, futur, venu</div>
+          <div class="l en"><em>pre-verb</em>to become, manage to, succeed in</div>
+          <div class="l fr"><em>auxiliaire</em>devenir, arriver à, réussir à</div>
+        </li>
+        <li class="card" data-category="k noun">
+          <div class="g">kasi</div><div class="n">kasi</div>
+          <div class="l en"><em>noun</em>plant, vegetation; herb, leaf</div>
+          <div class="l fr"><em>nom</em>plante, végétation ; herbe, feuille</div>
+        </li>
+        <li class="card" data-category="k pre-verb adjective">
+          <div class="g">ken</div><div class="n">ken</div>
+          <div class="l en"><em>pre-verb</em>to be able to, be allowed to, can, may</div>
+          <div class="l fr"><em>auxiliaire</em>pouvoir</div>
+          <div class="l en"><em>adjective</em>possible</div>
+          <div class="l fr"><em>adjectif</em>possible</div>
+        </li>
+        <li class="card" data-category="k preposition">
+          <div class="g">kepeken</div><div class="n">kepeken</div>
+          <div class="l en"><em>preposition</em>to use, with, by mean of</div>
+          <div class="l fr"><em>préposition</em>en utilisant, avec, au moyen de</div>
+        </li>
+        <li class="card" data-category="k noun pu2">
+          <div class="g">kili</div><div class="n">kili</div>
+          <div class="l en"><em>noun</em>fruit, vegetable, mushroom</div>
+          <div class="l fr"><em>nom</em>fruit, légume, champignon</div>
+        </li>
+        <li class="card" data-category="k noun">
+          <div class="g">kiwen</div><div class="n">kiwen</div>
+          <div class="l en"><em>noun</em>hard object, metal, rock, stone</div>
+          <div class="l fr"><em>nom</em>objet dur, métal, pierre</div>
+        </li>
+        <li class="card" data-category="k noun">
+          <div class="g">ko</div><div class="n">ko</div>
+          <div class="l en"><em>noun</em>clay, clinging form, dough, semi-solid, paste, powder</div>
+          <div class="l fr"><em>nom</em>argile, pâte, poudre, substance collante, semi-solide</div>
+        </li>
+        <li class="card" data-category="k noun">
+          <div class="g">kon</div><div class="n">kon</div>
+          <div class="l en"><em>noun</em>air, breath; essence, spirit; hidden reality, unseen agent</div>
+          <div class="l fr"><em>nom</em>air, souffle ; essence, esprit ; réalité cachée, agent invisible</div>
+        </li>
+        <li class="card" data-category="k adjective">
+          <div class="g">kule</div><div class="n">kule</div>
+          <div class="l en"><em>adjective</em>colorful, pigmented, painted</div>
+          <div class="l fr"><em>adjectif</em>coloré, pigmenté, peint</div>
+        </li>
+        <li class="card" data-category="k noun pu4">
+          <div class="g">kulupu</div><div class="n">kulupu</div>
+          <div class="l en"><em>noun</em>community, company, group, nation, society, tribe</div>
+          <div class="l fr"><em>nom</em>communauté, groupe, nation, société, tribu, compagnie</div>
+        </li>
+        <li class="card" data-category="k noun verb">
+          <div class="g">kute</div><div class="n">kute</div>
+          <div class="l en"><em>noun</em>ear</div>
+          <div class="l fr"><em>nom</em>oreille</div>
+          <div class="l en"><em>verb</em>to hear, listen; pay attention to, obey</div>
+          <div class="l fr"><em>verbe</em>entendre, écouter ; faire attention à, obéir</div>
+        </li>
+        <!-- l -->
+        <li class="card" data-category="l particle">
+          <div class="g">la</div><div class="n">la</div>
+          <div class="l en"><em>particle</em>(between the context phrase and the main sentence)</div>
+          <div class="l fr"><em>particule</em>(entre la phrase de contexte et la phrase principale)</div>
+        </li>
+        <li class="card" data-category="l adjective">
+          <div class="g">lape</div><div class="n">lape</div>
+          <div class="l en"><em>adjective</em>sleeping, resting</div>
+          <div class="l fr"><em>adjectif</em>dormant, se reposant</div>
+        </li>
+        <li class="card" data-category="l adjective">
+          <div class="g">laso</div><div class="n">laso</div>
+          <div class="l en"><em>adjective</em>blue, green</div>
+          <div class="l fr"><em>adjectif</em>bleu, vert</div>
+        </li>
+        <li class="card" data-category="l noun verb">
+          <div class="g">lawa</div><div class="n">lawa</div>
+          <div class="l en"><em>noun</em>head, mind</div>
+          <div class="l fr"><em>nom</em>tête</div>
+          <div class="l en"><em>verb</em>to control, direct, guide, lead, own, plan, regulate, rule</div>
+          <div class="l fr"><em>verbe</em>dominer, diriger, guider, mener, posséder, régler</div>
+        </li>
+        <li class="card" data-category="l noun">
+          <div class="g">len</div><div class="n">len</div>
+          <div class="l en"><em>noun</em>cloth, clothing, fabric, textile; cover, layer of privacy</div>
+          <div class="l fr"><em>nom</em>tissu, vêtement, textile ; couverture, rideau d'intimité</div>
+        </li>
+        <li class="card" data-category="l adjective">
+          <div class="g">lete</div><div class="n">lete</div>
+          <div class="l en"><em>adjective</em>cold, cool; uncooked, raw</div>
+          <div class="l fr"><em>adjectif</em>froid, frais ; cru</div>
+        </li>
+        <li class="card" data-category="l particle">
+          <div class="g">li</div><div class="n">li</div>
+          <div class="l en"><em>particle</em>(between any subject except <i>mi</i> alone or <i>sina</i> alone and its verb; also introduce a new verb for the same subject)</div>
+          <div class="l fr"><em>particule</em>(entre le sujet et son verbe, à l'exception de <i>mi</i> ou <i>sina</i> tout seul ; sert aussi à introduire un nouveau verbe pour le même sujet)</div>
+        </li>
+        <li class="card" data-category="l adjective">
+          <div class="g">lili</div><div class="n">lili</div>
+          <div class="l en"><em>adjective</em>little, small, short; few; a bit; young</div>
+          <div class="l fr"><em>adjectif</em>petit, (un) peu, jeune</div>
+        </li>
+        <li class="card" data-category="l noun">
+          <div class="g">linja</div><div class="n">linja</div>
+          <div class="l en"><em>noun</em>long and flexible thing; cord, hair, rope, thread, yarn</div>
+          <div class="l fr"><em>nom</em>objet long et flexible ; corde, cheveu, fil, ligne</div>
+        </li>
+        <li class="card" data-category="l noun pu2">
+          <div class="g">lipu</div><div class="n">lipu</div>
+          <div class="l en"><em>noun</em>flat object; book, document, card, paper, record, website</div>
+          <div class="l fr"><em>nom</em>objet plat ; livre, document, carte, papier, site web</div>
+        </li>
+        <li class="card" data-category="l adjective">
+          <div class="g">loje</div><div class="n">loje</div>
+          <div class="l en"><em>adjective</em>red, reddish</div>
+          <div class="l fr"><em>adjectif</em>rouge</div>
+        </li>
+        <li class="card" data-category="l preposition">
+          <div class="g">lon</div><div class="n">lon</div>
+          <div class="l en"><em>preposition</em>located at, present at, real, true, existing</div>
+          <div class="l fr"><em>préposition</em>à, situé à, présent à, dans, sur ; réel, vrai, actuel</div>
+        </li>
+        <li class="card" data-category="l noun number">
+          <div class="g">luka</div><div class="n">luka</div>
+          <div class="l en"><em>noun</em>arm, hand, tactile organ</div>
+          <div class="l fr"><em>nom</em>bras, main, organe du toucher</div>
+          <div class="l en"><em>number</em>5</div>
+          <div class="l fr"><em>nombre</em>5</div>
+        </li>
+        <li class="card" data-category="l o verb pre-verb">
+          <div class="g">lukin</div><div class="n">lukin / oko</div>
+          <div class="l en"><em>noun</em>eye</div>
+          <div class="l fr"><em>nom</em>œil</div>
+          <div class="l en"><em>verb</em>to look at, see, examine, observe, read, watch</div>
+          <div class="l fr"><em>verbe</em>regarder, voir, examiner, observer, lire, surveiller</div>
+          <div class="l en"><em>pre-verb</em>to seek, look for, try to</div>
+          <div class="l fr"><em>auxiliaire</em>chercher à, essayer de</div>
+        </li>
+        <li class="card" data-category="l noun">
+          <div class="g">lupa</div><div class="n">lupa</div>
+          <div class="l en"><em>noun</em>door, hole, orifice, window</div>
+          <div class="l fr"><em>nom</em>porte, trou, orifice, fenêtre</div>
+        </li>
+        <!-- m -->
+        <li class="card" data-category="m noun">
+          <div class="g">ma</div><div class="n">ma</div>
+          <div class="l en"><em>noun</em>earth, land; outdoors, world; country, territory; soil</div>
+          <div class="l fr"><em>nom</em>terre, sol ; monde, lieu en plein air ; pays, territoire</div>
+        </li>
+        <li class="card" data-category="m noun">
+          <div class="g">mama</div><div class="n">mama</div>
+          <div class="l en"><em>noun</em>parent, ancestor; creator, originator; caretaker, sustainer</div>
+          <div class="l fr"><em>nom</em>parent, ancêtre ; créateur ; celui ou celle qui prend soin</div>
+        </li>
+        <li class="card" data-category="m noun">
+          <div class="g">mani</div><div class="n">mani</div>
+          <div class="l en"><em>noun</em>money, cash, savings, wealth; large domesticated animal</div>
+          <div class="l fr"><em>nom</em>argent, richesse ; grand animal domestiqué</div>
+        </li>
+        <li class="card" data-category="m noun pu2">
+          <div class="g">meli</div><div class="n">meli</div>
+          <div class="l en"><em>noun</em>woman, female, feminine person; wife</div>
+          <div class="l fr"><em>nom</em>femme, femelle ; épouse</div>
+        </li>
+        <li class="card" data-category="m noun pu4">
+          <div class="g">mi</div><div class="n">mi</div>
+          <div class="l en"><em>noun</em>I, me, we, us</div>
+          <div class="l fr"><em>nom</em>je, moi, nous</div>
+        </li>
+        <li class="card" data-category="m noun pu4">
+          <div class="g">mije</div><div class="n">mije</div>
+          <div class="l en"><em>noun</em>man, male, masculine person; husband</div>
+          <div class="l fr"><em>nom</em>homme, mâle ; mari</div>
+        </li>
+        <li class="card" data-category="m verb pu5">
+          <div class="g">moku</div><div class="n">moku</div>
+          <div class="l en"><em>verb</em>to eat, drink, consume, swallow, ingest</div>
+          <div class="l fr"><em>verbe</em>manger, boire, consommer, avaler</div>
+        </li>
+        <li class="card" data-category="m adjective">
+          <div class="g">moli</div><div class="n">moli</div>
+          <div class="l en"><em>adjective</em>dead, dying</div>
+          <div class="l fr"><em>adjectif</em>mort, mourant</div>
+        </li>
+        <li class="card" data-category="m noun">
+          <div class="g">monsi</div><div class="n">monsi</div>
+          <div class="l en"><em>noun</em>back, behind, rear</div>
+          <div class="l fr"><em>nom</em>dos, derrière, arrière</div>
+        </li>
+        <li class="card" data-category="m particle">
+          <div class="g">mu</div><div class="n">mu</div>
+          <div class="l en"><em>particle</em>(animal noise or communication)</div>
+          <div class="l fr"><em>particule</em>(cri ou communication d'un animal)</div>
+        </li>
+        <li class="card" data-category="m noun">
+          <div class="g">mun</div><div class="n">mun</div>
+          <div class="l en"><em>noun</em>moon, night sky object, star</div>
+          <div class="l fr"><em>nom</em>lune, astre, étoile</div>
+        </li>
+        <li class="card" data-category="m adjective">
+          <div class="g">musi</div><div class="n">musi</div>
+          <div class="l en"><em>adjective</em>artistic, entertaining, frivolous, playful, recreational</div>
+          <div class="l fr"><em>adjectif</em>artistique, divertissant, frivole, pour s'amuser</div>
+        </li>
+        <li class="card" data-category="m adjective noun number">
+          <div class="g">mute</div><div class="n">mute</div>
+          <div class="l en"><em>adjective</em>many, a lot, more, much, several, very</div>
+          <div class="l fr"><em>adjectif</em>beaucoup de, plusieurs, plus de ; très</div>
+          <div class="l en"><em>noun</em>quantity</div>
+          <div class="l fr"><em>nom</em>quantité</div>
+					<div class="l en"><em>number</em>3 or more (simple); 20 (complex)</div>
+          <div class="l fr"><em>nombre</em>3 ou plus (simple) ; 20 (complexe)</div>
+        </li>
+        <!-- n -->
+        <li class="card" data-category="n particle noun">
+          <div class="g">nanpa</div><div class="n">nanpa</div>
+          <div class="l en"><em>particle</em>-th (ordinal number)</div>
+          <div class="l fr"><em>particule</em>-ième (nombre ordinal)</div>
+          <div class="l en"><em>noun</em>numbers</div>
+          <div class="l fr"><em>nom</em>nombre</div>
+        </li>
+        <li class="card" data-category="n adjective">
+          <div class="g">nasa</div><div class="n">nasa</div>
+          <div class="l en"><em>adjective</em>unusual, strange; foolish, crazy; drunk, intoxicated</div>
+          <div class="l fr"><em>adjectif</em>étrange, insolite ; fou, bête, idiot ; ivre</div>
+        </li>
+        <li class="card" data-category="n noun">
+          <div class="g">nasin</div><div class="n">nasin</div>
+          <div class="l en"><em>noun</em>way, custom, doctrine, method, path, road</div>
+          <div class="l fr"><em>nom</em>chemin, voie ; manière, façon ; coutume, méthode, doctrine</div>
+        </li>
+        <li class="card" data-category="n noun">
+          <div class="g">nena</div><div class="n">nena</div>
+          <div class="l en"><em>noun</em>bump, button, hill, mountain, nose, protuberance</div>
+          <div class="l fr"><em>nom</em>nez ; bosse, colline, montagne ; bouton</div>
+        </li>
+        <li class="card" data-category="n adjective">
+          <div class="g">ni</div><div class="n">ni</div>
+          <div class="l en"><em>adjective</em>that, this</div>
+          <div class="l fr"><em>adjectif</em>ce, cette</div>
+        </li>
+        <li class="card" data-category="n noun">
+          <div class="g">nimi</div><div class="n">nimi</div>
+          <div class="l en"><em>noun</em>name, word</div>
+          <div class="l fr"><em>nom</em>mot, nom</div>
+        </li>
+        <li class="card" data-category="n noun">
+          <div class="g">noka</div><div class="n">noka</div>
+          <div class="l en"><em>noun</em>foot, leg, organ of locomotion; bottom, lower part</div>
+          <div class="l fr"><em>nom</em>pied, jambe, organe de locomotion ; bas, dessous</div>
+        </li>
+        <!-- o -->
+        <li class="card" data-category="o particle">
+          <div class="g">o</div><div class="n">o</div>
+          <div class="l en"><em>particle</em>hey! O! (vocative or imperative)</div>
+          <div class="l fr"><em>particule</em>hé ! ô ! (vocatif ou impératif)</div>
+        </li>
+        <li class="card" data-category="o verb">
+          <div class="g">olin</div><div class="n">olin</div>
+          <div class="l en"><em>verb</em>to love, have compassion for, respect, show affection to</div>
+          <div class="l fr"><em>verbe</em>aimer, respecter, compatir, montrer de l'affection pour</div>
+        </li>
+        <li class="card" data-category="o noun">
+          <div class="g">ona</div><div class="n">ona</div>
+          <div class="l en"><em>noun</em>he, she, it, they</div>
+          <div class="l fr"><em>nom</em>il(s), elle(s)</div>
+        </li>
+        <li class="card" data-category="o verb">
+          <div class="g">open</div><div class="n">open</div>
+          <div class="l en"><em>verb</em>to begin, start; open; turn on</div>
+          <div class="l fr"><em>verbe</em>commencer, ouvrir, allumer</div>
+        </li>
+        <!-- p -->
+        <li class="card" data-category="p adjective">
+          <div class="g">pakala</div><div class="n">pakala</div>
+          <div class="l en"><em>adjective</em>botched, broken, damaged, harmed, messed up</div>
+          <div class="l fr"><em>adjectif</em>brisé, cassé, abîmé, bâclé, gâché</div>
+        </li>
+        <li class="card" data-category="p verb">
+          <div class="g">pali</div><div class="n">pali</div>
+          <div class="l en"><em>verb</em>to do, take action on, work on; build, make, prepare</div>
+          <div class="l fr"><em>verbe</em>faire, agir sur, travailler, construire, préparer</div>
+        </li>
+        <li class="card" data-category="p noun">
+          <div class="g">palisa</div><div class="n">palisa</div>
+          <div class="l en"><em>noun</em>long hard thing; branch, rod, stick</div>
+          <div class="l fr"><em>nom</em>objet long et dur ; bâton</div>
+        </li>
+        <li class="card" data-category="p noun">
+          <div class="g">pan</div><div class="n">pan</div>
+          <div class="l en"><em>noun</em>cereal, grain; barley, corn, oat, rice, wheat; bread, pasta</div>
+          <div class="l fr"><em>nom</em>céréale ; riz, blé, orge, maïs, avoine ; pain, pâtes</div>
+        </li>
+        <li class="card" data-category="p verb">
+          <div class="g">pana</div><div class="n">pana</div>
+          <div class="l en"><em>verb</em>to give, send, emit, provide, put, release</div>
+          <div class="l fr"><em>verbe</em>donner, envoyer, mettre, fournir, émettre, lâcher</div>
+        </li>
+        <li class="card" data-category="p particle">
+          <div class="g">pi</div><div class="n">pi</div>
+          <div class="l en"><em>particle</em>of</div>
+          <div class="l fr"><em>particule</em>de</div>
+        </li>
+        <li class="card" data-category="p noun adjective">
+          <div class="g">pilin</div><div class="n">pilin</div>
+          <div class="l en"><em>noun</em>heart (physical or emotional)</div>
+          <div class="l fr"><em>nom</em>cœur (physique et psychologique)</div>
+          <div class="l en"><em>adjective</em>feeling (an emotion, a direct experience)</div>
+          <div class="l fr"><em>adjectif</em>qui ressent (une émotion, une expérience directe)</div>
+        </li>
+        <li class="card" data-category="p adjective">
+          <div class="g">pimeja</div><div class="n">pimeja</div>
+          <div class="l en"><em>adjective</em>black, dark, unlit</div>
+          <div class="l fr"><em>adjectif</em>noir, foncé, sombre</div>
+        </li>
+        <li class="card" data-category="p adjective">
+          <div class="g">pini</div><div class="n">pini</div>
+          <div class="l en"><em>adjective</em>ago, completed, ended, finished, past</div>
+          <div class="l fr"><em>adjectif</em>fini, passé, terminé</div>
+        </li>
+        <li class="card" data-category="p noun">
+          <div class="g">pipi</div><div class="n">pipi</div>
+          <div class="l en"><em>noun</em>bug, insect, ant, spider</div>
+          <div class="l fr"><em>nom</em>insecte, araignée, fourmi</div>
+        </li>
+        <li class="card" data-category="p noun">
+          <div class="g">poka</div><div class="n">poka</div>
+          <div class="l en"><em>noun</em>hip, side; next to, nearby, vicinity</div>
+          <div class="l fr"><em>nom</em>hanche, côté ; proximité</div>
+        </li>
+        <li class="card" data-category="p noun">
+          <div class="g">poki</div><div class="n">poki</div>
+          <div class="l en"><em>noun</em>container, bag, bowl, cup, cupboard, drawer, vessel</div>
+          <div class="l fr"><em>nom</em>sac, bol, récipient, tasse, placard, tiroir, vase</div>
+        </li>
+        <li class="card" data-category="p adjective">
+          <div class="g">pona</div><div class="n">pona</div>
+          <div class="l en"><em>adjective</em>good, positive, useful; friendly, peaceful; simple</div>
+          <div class="l fr"><em>adjectif</em>bon, positif, utile ; sympa, paisible ; simple</div>
+        </li>
+        <li class="card" data-category="p adjective">
+          <div class="g">pu</div><div class="n">pu</div>
+          <div class="l en"><em>adjective</em>interacting with the official Toki Pona book</div>
+          <div class="l fr"><em>adjectif</em>interagissant avec le livre officiel du Toki Pona</div>
+        </li>
+        <!-- s -->
+        <li class="card" data-category="s adjective preposition">
+          <div class="g">sama</div><div class="n">sama</div>
+          <div class="l en"><em>adjective</em>same, similar; each other; sibling, peer, fellow</div>
+          <div class="l fr"><em>adjectif</em>même, semblable ; l'un l'autre ; fraternel, homologue</div>
+          <div class="l en"><em>preposition</em>as, like</div>
+          <div class="l fr"><em>préposition</em>comme</div>
+        </li>
+        <li class="card" data-category="s adjective">
+          <div class="g">seli</div><div class="n">seli</div>
+          <div class="l en"><em>adjective</em>fire; cooking element, chemical reaction, heat source</div>
+          <div class="l fr"><em>adjectif</em>feu ; élément de cuisson, réaction chimique, chaleur</div>
+        </li>
+        <li class="card" data-category="s noun">
+          <div class="g">selo</div><div class="n">selo</div>
+          <div class="l en"><em>noun</em>outer form, outer layer; bark, peel, shell, skin; boundary</div>
+          <div class="l fr"><em>nom</em>forme, couche extérieure ; peau, écorce, pelure, coquille ; limite</div>
+        </li>
+        <li class="card" data-category="s particle">
+          <div class="g">seme</div><div class="n">seme</div>
+          <div class="l en"><em>particle</em>what? which?</div>
+          <div class="l fr"><em>particule</em>quoi ? quel ?</div>
+        </li>
+        <li class="card" data-category="s noun adjective">
+          <div class="g">sewi</div><div class="n">sewi</div>
+          <div class="l en"><em>noun</em>area above, highest part, something elevated</div>
+          <div class="l fr"><em>nom</em>dessus, le haut, chose élevée</div>
+          <div class="l en"><em>adjective</em>awe-inspiring, divine, sacred, supernatural</div>
+          <div class="l fr"><em>adjectif</em>divin, sacré, surnaturel, qui inspire le respect et la crainte</div>
+        </li>
+        <li class="card" data-category="s noun">
+          <div class="g">sijelo</div><div class="n">sijelo</div>
+          <div class="l en"><em>noun</em>body (of person or animal), physical state, torso</div>
+          <div class="l fr"><em>nom</em>corps, état physique, torse</div>
+        </li>
+        <li class="card" data-category="s noun adjective">
+          <div class="g">sike</div><div class="n">sike</div>
+          <div class="l en"><em>noun</em>round or circular thing; ball, circle, cycle, sphere, wheel</div>
+          <div class="l fr"><em>nom</em>objet rond ; ballon, cercle, cycle, sphère, roue, anneau</div>
+          <div class="l en"><em>adjective</em>of one year</div>
+          <div class="l fr"><em>adjectif</em>annuel</div>
+        </li>
+        <li class="card" data-category="s n adjective">
+          <div class="g">sin</div><div class="n">sin / namako</div>
+          <div class="l en"><em>adjective</em>new, fresh; additional, another, extra</div>
+          <div class="l fr"><em>adjectif</em>nouveau, frais ; encore un, de plus</div>
+        </li>
+        <li class="card" data-category="s noun">
+          <div class="g">sina</div><div class="n">sina</div>
+          <div class="l en"><em>noun</em>you</div>
+          <div class="l fr"><em>nom</em>tu, toi, vous</div>
+        </li>
+        <li class="card" data-category="s noun">
+          <div class="g">sinpin</div><div class="n">sinpin</div>
+          <div class="l en"><em>noun</em>face, foremost, front, wall</div>
+          <div class="l fr"><em>nom</em>avant, visage, front, mur</div>
+        </li>
+        <li class="card" data-category="s noun">
+          <div class="g">sitelen</div><div class="n">sitelen</div>
+          <div class="l en"><em>noun</em>image, picture, representation, symbol, mark, writing</div>
+          <div class="l fr"><em>nom</em>image, représentation, symbole, marque, écriture</div>
+        </li>
+        <li class="card" data-category="s verb pre-verb">
+          <div class="g">sona</div><div class="n">sona</div>
+          <div class="l en"><em>verb</em>to know, be skilled in, be wise about, have information on</div>
+          <div class="l fr"><em>verbe</em>savoir, connaître</div>
+          <div class="l en"><em>pre-verb</em>to know how to</div>
+          <div class="l fr"><em>auxiliaire</em>savoir</div>
+        </li>
+        <li class="card" data-category="s noun">
+          <div class="g">soweli</div><div class="n">soweli</div>
+          <div class="l en"><em>noun</em>animal, beast, land mammal</div>
+          <div class="l fr"><em>nom</em>animal, mammifère terrestre</div>
+        </li>
+        <li class="card" data-category="s adjective">
+          <div class="g">suli</div><div class="n">suli</div>
+          <div class="l en"><em>adjective</em>big, heavy, large, long, tall; important; adult</div>
+          <div class="l fr"><em>adjectif</em>grand, lourd, long, haut ; important ; adulte</div>
+        </li>
+        <li class="card" data-category="s noun">
+          <div class="g">suno</div><div class="n">suno</div>
+          <div class="l en"><em>noun</em>sun; light, brightness, glow, radiance, shine; light source</div>
+          <div class="l fr"><em>nom</em>soleil, lumière, lueur, brillant</div>
+        </li>
+        <li class="card" data-category="s noun">
+          <div class="g">supa</div><div class="n">supa</div>
+          <div class="l en"><em>noun</em>horizontal surface, thing to put or rest something on</div>
+          <div class="l fr"><em>nom</em>surface horizontale sur laquelle on pose quelque chose</div>
+        </li>
+        <li class="card" data-category="s adjective">
+          <div class="g">suwi</div><div class="n">suwi</div>
+          <div class="l en"><em>adjective</em>sweet, fragant; cute, innocent, adorable</div>
+          <div class="l fr"><em>adjectif</em>doux, parfumé, mignon, innocent, adorable</div>
+        </li>
+        <!-- t -->
+        <li class="card" data-category="t preposition">
+          <div class="g">tan</div><div class="n">tan</div>
+          <div class="l en"><em>preposition</em>by, from, because of</div>
+          <div class="l fr"><em>préposition</em>de, provenant de, à cause de</div>
+        </li>
+        <li class="card" data-category="t particle adjective">
+          <div class="g">taso</div><div class="n">taso</div>
+          <div class="l en"><em>particle</em>but, however</div>
+          <div class="l fr"><em>particule</em>mais, cependant</div>
+          <div class="l en"><em>adjective</em>only</div>
+          <div class="l fr"><em>adjectif</em>seulement</div>
+        </li>
+        <li class="card" data-category="t preposition adjective">
+          <div class="g">tawa</div><div class="n">tawa</div>
+          <div class="l en"><em>preposition</em>going to, toward; for; from the perspective of</div>
+          <div class="l fr"><em>préposition</em>à, allant à, vers, pour, du point de vue de</div>
+          <div class="l en"><em>adjective</em>moving</div>
+          <div class="l fr"><em>adjectif</em>en mouvement, animé</div>
+        </li>
+        <li class="card" data-category="t noun">
+          <div class="g">telo</div><div class="n">telo</div>
+          <div class="l en"><em>noun</em>water, liquid, fluid, wet substance; beverage</div>
+          <div class="l fr"><em>nom</em>eau, liquide, fluide, substance mouillée ; boisson</div>
+        </li>
+        <li class="card" data-category="t noun">
+          <div class="g">tenpo</div><div class="n">tenpo</div>
+          <div class="l en"><em>noun</em>time, duration, moment, occasion, period, situation</div>
+          <div class="l fr"><em>nom</em>temps, durée, moment, occasion, période, situation</div>
+        </li>
+        <li class="card" data-category="t verb">
+          <div class="g">toki</div><div class="n">toki</div>
+          <div class="l en"><em>verb</em>to communicate, say, speak, talk, use language, think</div>
+          <div class="l fr"><em>verbe</em>communiquer, dire, parler, penser</div>
+        </li>
+        <li class="card" data-category="t noun">
+          <div class="g">tomo</div><div class="n">tomo</div>
+          <div class="l en"><em>noun</em>indoor space; building, home, house, room</div>
+          <div class="l fr"><em>nom</em>espace intérieur, lieu couvert ; maison, bâtiment, édifice, pièce, chambre, chez soi, demeure</div>
+        </li>
+        <li class="card" data-category="t number">
+          <div class="g">tu</div><div class="n">tu</div>
+          <div class="l en"><em>number</em>2</div>
+          <div class="l fr"><em>nombre</em>2</div>
+        </li>
+        <!-- u -->
+        <li class="card" data-category="u verb">
+          <div class="g">unpa</div><div class="n">unpa</div>
+          <div class="l en"><em>verb</em>have sexual or marital relations with</div>
+          <div class="l fr"><em>verbe</em>avoir des rapports sexuels ou conjugaux avec</div>
+        </li>
+        <li class="card" data-category="u noun">
+          <div class="g">uta</div><div class="n">uta</div>
+          <div class="l en"><em>noun</em>mouth, lips, oral cavity, jaw</div>
+          <div class="l fr"><em>nom</em>bouche, lèvres, cavité buccale, mâchoire</div>
+        </li>
+        <li class="card" data-category="u verb">
+          <div class="g">utala</div><div class="n">utala</div>
+          <div class="l en"><em>verb</em>to battle, challenge, compete against, struggle against</div>
+          <div class="l fr"><em>verbe</em>se battre contre, lutter contre</div>
+        </li>
+        <!-- w -->
+        <li class="card" data-category="w adjective">
+          <div class="g">walo</div><div class="n">walo</div>
+          <div class="l en"><em>adjective</em>white, whitish; light-colored, pale</div>
+          <div class="l fr"><em>adjectif</em>blanc, clair, pâle</div>
+        </li>
+        <li class="card" data-category="w adjective number">
+          <div class="g">wan</div><div class="n">wan</div>
+          <div class="l en"><em>adjective</em>unique, united</div>
+          <div class="l fr"><em>adjectif</em>unique, uni</div>
+          <div class="l en"><em>number</em>1</div>
+          <div class="l fr"><em>nombre</em>1</div>
+        </li>
+        <li class="card" data-category="w noun">
+          <div class="g">waso</div><div class="n">waso</div>
+          <div class="l en"><em>noun</em>bird, flying creature, winged animal</div>
+          <div class="l fr"><em>nom</em>oiseau, créature volante, animal ailé</div>
+        </li>
+        <li class="card" data-category="w adjective">
+          <div class="g">wawa</div><div class="n">wawa</div>
+          <div class="l en"><em>adjective</em>strong, powerful; confident, sure; energetic, intense</div>
+          <div class="l fr"><em>adjectif</em>fort, puissant ; sûr, confiant ; énergique, intense</div>
+        </li>
+        <li class="card" data-category="w adjective">
+          <div class="g">weka</div><div class="n">weka</div>
+          <div class="l en"><em>adjective</em>absent, away, ignored</div>
+          <div class="l fr"><em>adjectif</em>absent, enlevé, éloigné</div>
+        </li>
+        <li class="card" data-category="w pre-verb">
+          <div class="g">wile</div><div class="n">wile</div>
+          <div class="l en"><em>pre-verb</em>must, need, require, should, want, wish</div>
+          <div class="l fr"><em>auxiliaire</em>devoir, avoir besoin de, vouloir</div>
+        </li>
+      </ul>
+      <ul class="filters footer">
+        <li><div class="title"><a href="https://git.sr.ht/~lectronice/pimeja">pimeja<span> 0.3.2</span></a></div></li>
+        <li><div class="top"><a href="#top">sewi</a></div></li>
+        <li><div class="author"><a href="https://merveilles.town/@ice">toki lipu ma</a></div></li>
+        <li><div class="forum"><a href="https://tokipona.lectronice.com">kulupu lipu ma</a><div></li>
+      </ul>
+    </div>
+  </body>
+</html>
